@@ -1,0 +1,25 @@
+A simple "Hello World" project with Rails 3.1 and backbone
+
+What I've done:
+
+1. Added gems:
+
+gem 'rails-backbone'
+gem 'haml'
+gem 'haml_coffee_assets', '~> 0.6.0'
+gem 'execjs'
+
+2. Set up backbone-rails (https://github.com/codebrew/backbone-rails):
+
+rails g backbone install (creates app/assets/javascripts/backbone/..)
+
+3. Generated a Rails scaffold (Car)
+
+rails g scaffold Car make:string model:string
+
+4. Generated backbone scaffold for Car
+
+rails g backbone:scaffold Car make:string model:string
+
+5. 
+

@@ -1,0 +1,8 @@
+#cars
+
+:javascript
+  $(function() {
+    //BackboneCoffeescriptHamlRails is app name
+    window.router = new BackboneCoffeescriptHamlRails.Routers.CarsRouter({cars: #{@cars.to_json.html_safe }});
+    Backbone.history.start();
+  });
