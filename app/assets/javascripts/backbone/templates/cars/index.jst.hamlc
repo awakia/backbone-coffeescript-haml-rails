@@ -1,0 +1,15 @@
+%h1 Listing cars
+
+%table#cars-table
+
+%table#forms-table
+  %tr
+    %th Make
+    %th Model
+    %th 
+    %th 
+    %th
+
+%br
+
+%a{:href => "#/new"}New Car

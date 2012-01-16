@@ -61,7 +61,7 @@ class CarsController < ApplicationController
     respond_to do |format|
       if @car.update_attributes(params[:car])
         format.html { redirect_to @car, :notice => 'Car was successfully updated.' }
-        format.json { head :ok }
+        format.json { render :json => @car, :head => :ok }
       else
         format.html { render :action => "edit" }
         format.json { render :json => @car.errors, :status => :unprocessable_entity }

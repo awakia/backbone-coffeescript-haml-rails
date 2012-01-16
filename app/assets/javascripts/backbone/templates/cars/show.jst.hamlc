@@ -1,0 +1,9 @@
+%p
+	%b Make:
+	= @make
+
+%p
+	%b Model:
+	= @model
+
+%a{:href => "#/index"} Back

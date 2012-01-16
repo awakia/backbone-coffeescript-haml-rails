@@ -14,6 +14,8 @@ class BackboneCoffeescriptHamlRails.Views.Cars.EditView extends Backbone.View
       success : (car) =>
         @model = car
         window.location.hash = "/#{@model.id}"
+      error : (msg) =>
+        alert (msg)
     )
 
   render : ->

@@ -38,5 +38,6 @@ gem 'jquery-rails'
 
 group :development do
   gem 'haml_coffee_assets', '~> 0.6.0'
+  gem 'ruby-debug'
 end
 

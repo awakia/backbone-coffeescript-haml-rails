@@ -1,0 +1,14 @@
+%h1 New Car
+
+%form#new-car{:name => "car"}
+  .field
+    %label{:for => "make"} Make:
+    %input{:type => "text", :name => "make", :id => "make", :value => @make }
+  .field
+    %label{:for => "model"} Model:
+    %input{:type => "text", :name => "model", :id => "model", :value => @model }
+
+  .actions
+    %input{:type => "submit", :value => "Create Car"}
+
+%a{:href => "#/index"} Back

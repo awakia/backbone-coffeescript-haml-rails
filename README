@@ -23,3 +23,11 @@ rails g backbone:scaffold Car make:string model:string
 
 5. Added a placeholder div and Backbone init to cars/index
 
+6. Added hamlcoffee JS file to JS Manifest (application.js)
+
+//= require hamlcoffee
+
+7. Converted generated erb files to haml (hamlc) JST files in assets/javascripts/backbone/templates/cars
+
+8. Updated the scaffold rails controller to return a JSON @car object in addition to the 200
+
